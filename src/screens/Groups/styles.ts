@@ -7,4 +7,6 @@ export const Container = styled.View`
     justify-content: center;
 `;
 
-export const Text = styled.Text``;
+export const Text = styled.Text`
+
+`;
