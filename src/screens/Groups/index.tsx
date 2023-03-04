@@ -5,6 +5,7 @@ import { Header } from "@components/Header";
 import { HighLight } from "@components/HighLight";
 import { GroupCard } from "@components/GroupCard";
 import { ListEmpty } from "@components/ListEmpty";
+import { Button } from "@components/Button";
 export function Groups() {
 
   const [ groups, setGroups ] = useState(['Amigos', 'Trabalho', 'Esporte']);
@@ -21,7 +22,9 @@ export function Groups() {
         renderItem={({item}) => <GroupCard title={item} />}
         ListEmptyComponent={()=> <ListEmpty message="Não há turmas cadastradas"/>}
       />
-
+      <Button 
+        title="Criar nova turma"
+      />
     </Container>
   );
 }
